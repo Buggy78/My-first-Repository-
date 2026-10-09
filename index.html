@@ -3,11 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>Gilly | Developer Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #e2e8f0;
+            line-height: 1.7;
+        }
+
+        header {
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #263449;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        header a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 65px 8%;
+        }
+
+        .tag {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: clamp(38px, 8vw, 64px);
+            line-height: 1.15;
+            margin: 18px 0;
+        }
+
+        h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: #a7b4c8;
+            font-size: 17px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 22px;
+            background: #0284c7;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            width: fit-content;
+        }
+
+        section {
+            padding: 55px 8%;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .about {
+            color: #a7b4c8;
+            max-width: 700px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(220px, 1fr)
+            );
+            gap: 18px;
+        }
+
+        .card {
+            background: #111c30;
+            border: 1px solid #263449;
+            padding: 22px;
+            border-radius: 12px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #a7b4c8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #263449;
+            color: #94a3b8;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello, Gilly!</h1>
-    <p>Welcome to my first website.</p>
-    <p>I am learning programming using GitHub.</p>
+
+    <header>
+        <div class="logo">Gilly.dev</div>
+        <a href="#contact">Contact</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="tag">ASPIRING SOFTWARE DEVELOPER</div>
+
+            <h1>
+                Hi, I'm Gilly.<br>
+                I build <span>digital things.</span>
+            </h1>
+
+            <p>
+                I'm a Computer Science student learning to build
+                websites, software and Android applications.
+                This is my journey into technology.
+            </p>
+
+            <a href="#projects" class="button">
+                Explore My Projects →
+            </a>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p class="about">
+                I'm developing my programming skills one project
+                at a time. I enjoy exploring technology, solving
+                problems and learning how software works.
+                I'm currently building my portfolio using HTML,
+                CSS and GitHub.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <div class="projects">
+                <article class="card">
+                    <h3>My First Website</h3>
+                    <p>
+                        My first published website, built with
+                        HTML and hosted using GitHub Pages.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Android Applications</h3>
+                    <p>
+                        My learning journey toward building useful
+                        mobile applications.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Future Projects</h3>
+                    <p>
+                        More programming experiments and projects
+                        will appear here as I learn.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Let's Connect</h2>
+
+            <p class="about">
+                Interested in my work? Visit my GitHub profile
+                to follow my progress and future projects.
+            </p>
+
+            <a
+                href="https://github.com/Buggy78"
+                class="button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Visit My GitHub →
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 Gilly | Built with HTML and CSS
+    </footer>
+
 </body>
 </html>
